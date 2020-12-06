@@ -9,7 +9,6 @@ from utils.utils import *
 conf = cp.RawConfigParser()
 conf_path = "cfg/mde.cfg"
 conf.read(conf_path)
-weights_path = "weights/yolo_weights/best-Copy1.pt"
 
 yolo_props = {}
 yolo_props["anchors"] = np.array([float(x) for x in conf.get("yolo", "anchors").split(',')]).reshape((-1, 2))
@@ -35,7 +34,7 @@ def detect(save_img=False):
 
     # Initialize model
     #model = MDENet(opt.cfg, img_size)
-    model = MDENet(path=weights_path, yolo_props=yolo_props, freeze=freeze).to(device)
+    model = MDENet(path=opt.weights, yolo_props=yolo_props, freeze=freeze).to(device)
     
     """
     chkpoint = torch.load(weights_path)
