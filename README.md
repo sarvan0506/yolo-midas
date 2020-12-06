@@ -23,7 +23,7 @@ Please refer the config file `cfg/mde.cfg` to change the network configuration, 
 
 ## Inference
 
-Download the weights from https://drive.google.com/drive/u/2/folders/11p7hhea2Y1FK_T5_P3W271V76IKigcUD and place it under `weights` folder
+Download the weights from https://drive.google.com/file/d/1LZoWaZbsD4gG4xgWQ4cW-ezyhmaHXV1O/view?usp=sharing and place it under `weights` folder
 
 Place the images on which inference need to be run, inside `input` folder
 
