@@ -1,4 +1,4 @@
-# yolo-midas
+# yolo-midas for Autonomous Navigation
 
 Combine YOLOv3 with MiDaS with a single Resnext101 backbone. The idea is to use a single feature extractor for two different applications, in this case, Object detection and Monocular Depth Estimation.
 
